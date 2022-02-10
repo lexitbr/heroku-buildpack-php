@@ -18,9 +18,6 @@
 			"email": "dz@heroku.com"
 		}
 	],
-	"require": {
-		"heroku-sys/ext-mbstring": "*"
-	},
 	"bin": [
 		"bin/heroku-php-apache2",
 		"bin/heroku-php-nginx"
