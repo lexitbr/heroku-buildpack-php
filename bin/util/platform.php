@@ -224,6 +224,7 @@ $require["heroku-sys/composer-plugin-api"] = "^" . explode(".", $lock["plugin-ap
 $require["heroku-sys/apache"] = "^2.4.10";
 $require["heroku-sys/nginx"] = "^1.8.0";
 $require["heroku-sys/ext-mbstring"] = "*";
+$require["ext-mbstring"] = "*";
 
 preg_match("#^([^-]+)(?:-([0-9]+))?\$#", $STACK, $stack);
 $provide = ["heroku-sys/" . $stack[1] => (isset($stack[2]) ? $stack[2] : "1") . gmdate(".Y.m.d")]; # heroku: 20.2021.02.04 etc
