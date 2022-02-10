@@ -170,7 +170,6 @@ if (file_exists($COMPOSER_LOCK)) {
 				$sfr[$name] = getflag($lock["stability-flags"][$name]);
 			}
 		}
-		$require["ext-mbstring"] = "*";
 		$require = array_merge($require, mkdep($sfr));
 	}
 	// same for platform-dev requirements, but they go into a require-dev section later, so only installs with --dev pull those in
